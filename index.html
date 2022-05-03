@@ -4,9 +4,12 @@
     <title>Simple Upload Example</title>
 </head>
 <body>
-<form action="/" enctype="multipart/form-data" method="post">
-    <input type="file" name="upload" multiple>
-    <input type="submit" value="Upload">
+<form  action="/" method="POST" enctype="multipart/form-data" >
+    <input name="email" type="email" id="email"/><br><br>
+    <input type="file" name="upload"  multiple>
+    <button type="submit">Submit</button>
 </form>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 </body>
 </html>
